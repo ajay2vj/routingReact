@@ -2,13 +2,15 @@ import React, { Component } from 'react';
 import Footer from '../components/Footer.jsx';
 import Navbar from '../components/Navbar.jsx';
 import Jumbotron from '../components/Jumbotron.jsx';
+import Sidebar from '../components/Sidebar';
 
 class About extends Component {
   render() {
     return (
       <div>
         <Navbar />
-        <Jumbotron title="Contact" subtitle="This page is all about me and my work!"/>
+        {/* <Jumbotron title="Contact" subtitle="This page is all about me and my work!"/> */}
+        <Sidebar />
         <div className="container">
           <h2>Contact</h2>
           <p>

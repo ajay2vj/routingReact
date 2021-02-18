@@ -2,22 +2,69 @@ import React, { Component } from 'react';
 import Footer from '../components/Footer.jsx';
 import Navbar from '../components/Navbar.jsx';
 import Jumbotron from '../components/Jumbotron.jsx';
+import Sidebar from '../components/Sidebar.jsx';
 
 class Home extends Component {
   render() {
     return (
       <div>
         <Navbar />
-        <Jumbotron title="Welcome" subtitle="Put something witty here!" />
-        <div className="container">
-          <h2>Welcome</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat orci eu nulla sagittis, pulvinar dignissim lectus consequat. Etiam in lobortis ligula, vitae ornare lacus. Vivamus scelerisque lorem arcu, vitae eleifend ex commodo a. Quisque rutrum, augue sit amet egestas efficitur, magna nulla lacinia elit, sed suscipit tortor erat vitae enim. Donec egestas odio id aliquet rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque mi dolor, egestas nec lacinia non, sodales eu lacus. Donec ultricies nec elit ac ornare. Quisque fermentum ligula ut feugiat cursus. Aliquam auctor suscipit ex a lacinia. Mauris sollicitudin, justo quis fringilla finibus, dui diam ullamcorper nulla, sit amet placerat justo neque quis quam. Praesent nec nibh at tortor ornare dignissim. Morbi tincidunt fringilla turpis at luctus. Vivamus dapibus ligula eget pellentesque luctus. Maecenas ut consectetur lacus, non dignissim nisi. Praesent sodales tellus sit amet faucibus tempus.
-          </p>
-          <p>
-            Maecenas dapibus, est posuere eleifend rutrum, lectus ligula gravida urna, at pretium dui turpis non lorem. Donec pretium lorem ipsum, at fermentum nibh consequat facilisis. Sed maximus massa est, vel porta diam placerat id. Vivamus imperdiet lorem eget dolor bibendum, eget gravida tellus interdum. Sed lectus odio, condimentum eu porttitor vel, euismod sit amet urna. Nam quis dui a nibh rhoncus aliquam vitae in metus. Nam sit amet semper turpis. Suspendisse eu malesuada tortor, vel lacinia nisl. Phasellus ultrices vehicula magna, sed tempor neque dapibus quis. Phasellus urna justo, sollicitudin ac odio eget, convallis varius nulla. Vivamus in lacinia lorem, at eleifend nulla. Nulla nec luctus purus. Integer id purus mauris. Phasellus finibus ultricies erat a tempus. Nulla luctus sem nec justo venenatis, eu faucibus purus congue.
-          </p>
-        </div>
+        {/* <Jumbotron title="Welcome" subtitle="Put something witty here!" /> */}
+          <Sidebar />
+        <section id="product-list">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12">
+                <h1 className="text-center mt-5" data-aos="fade-up" data-aos-delay="400">Product List</h1> 
+              </div>
+              <div className="col-md-4">
+                <div className="product-image" data-aos="fade-up" data-aos-delay="500">
+                  <img src={window.location.origin + '/images/product-1.webp'} width="100%"/>
+                  <div className="card-body">
+                    <p>desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-4">
+                <div className="product-image" data-aos="fade-up" data-aos-delay="500">
+                  <img src={window.location.origin + '/images/product-2.webp'} width="100%"/>
+                  <div className="card-body">
+                    <p>desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-4">
+                <div className="product-image" data-aos="fade-up" data-aos-delay="500">
+                  <img src={window.location.origin + '/images/product-3.webp'} width="100%"/>
+                  <div className="card-body">
+                    <p>desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="about-section" className="section-about">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12">
+                <h1 className="text-center mb-5" data-aos="fade-up" data-aos-delay="400">About Us</h1> 
+              </div>
+              <div className="col-md-6">
+                <div className="left-side-column" data-aos="fade-up" data-aos-delay="500">
+                  <img src={window.location.origin + '/images/about.jpeg'} width="100%" />
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div className="right-side-column" data-aos="fade-up" data-aos-delay="500">
+                  <p><img src={window.location.origin + '/images/icon.png'} /></p>
+                  <h2 className="text-center">Shoe is an art</h2>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <Footer />
       </div>
     );

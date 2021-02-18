@@ -4,3 +4,152 @@
     box-sizing: border-box;
     font-family: 'Asul';
   }
+  .slider-container {
+    position: relative;
+    overflow: hidden;
+    /* width: 100vw; */
+    top: 0px;
+    height: 100vh;
+  }
+  
+  .left-slide {
+    height: 100%;
+    width: 35%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .left-slide > div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  
+  .left-slide h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: -30px;
+  }
+  
+  .right-slide {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 35%;
+    width: 65%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .right-slide > div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  button {
+    background-color: #fff;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 15px;
+  }
+  
+  button:hover {
+    color: #222;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  .slider-container .action-buttons button {
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    z-index: 100;
+  }
+  
+  .slider-container .action-buttons .down-button {
+    transform: translateX(-100%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+  .slider-container .action-buttons .up-button {
+    transform: translateY(-100%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .first-left-slide {
+    background: #364465;
+  }
+  .second-left-slide {
+    background: #b7b7b7;
+  }
+  .third-left-slide {
+    background: #1092af;
+  }
+  .right-slide-img-one {
+    background-image: url('../images/02.jpg');
+  }
+  .right-slide-img-two {
+    background-image: url('../images/01.jpg');
+  }
+  .right-slide-img-three {
+    background-image: url('../images/03.jpg');
+  }
+  
+.product-image img {
+  padding: 15px 15px 15px 15px;
+}
+.product-image .card-body p {
+  text-align: center;
+  padding: 0px 15px;
+}
+.logo-nav {
+  width: 70px;
+}
+/* NVIGATION BAR */
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .open>.nav-link {
+  color: #1092af;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #1092af;
+}
+
+/* ABOUT SECTION */
+.section-about {
+  padding-top: 90px;
+  padding-bottom: 100px;
+}
+.left-side-column {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+.right-side-column {
+  padding-top: 30px;
+}
+.right-side-column p {
+  text-align: center;
+}
+@media only screen and (max-width: 720px) { 
+  .slider-container {
+    position: relative;
+    overflow: hidden;
+    /* width: 100vw; */
+    top: 0px;
+    height: 100vh;
+  }
+  .right-side-column {
+    padding-top: 88px;
+  }
+}
