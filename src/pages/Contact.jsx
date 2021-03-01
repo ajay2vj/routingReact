@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Footer from '../components/Footer.jsx';
 import Navbar from '../components/Navbar.jsx';
-import Jumbotron from '../components/Jumbotron.jsx';
 import Sidebar from '../components/Sidebar';
 
 class About extends Component {

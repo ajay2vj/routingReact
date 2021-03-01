@@ -6,7 +6,7 @@ class Navbar extends Component {
     return (
       <nav className="navbar navbar-toggleable-md navbar-light bg-light" style={{background:'#edf0f1', zIndex:1}}>
         {/* <Link className="navbar-brand" to="/">React Website</Link> */}
-        <img src={window.location.origin + '/images/icon.png'} className="logo-nav"/>
+        <img src={window.location.origin + '/images/icon.png'} className="logo-nav" alt="logo"/>
         <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
